@@ -1,0 +1,250 @@
+﻿@font-face{
+	font-family: sans;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans!important;
+}
+p{
+	font-family: sans;
+}
+h1, h2{
+	font-family: sans;
+	font-size: 28px;
+	font-weight: bold;
+	font-variant: normal;
+}
+h2{
+	font-size: 120%;
+}
+body{
+	background-color: #99CCFF;
+}
+section.landing{
+	background-color: rgba(256,256,256,0.70);
+	width: 900px;
+	margin: 0 auto;
+	padding: 20px 30px;
+	border-color: white;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 1px;
+	position: relative;
+	text-align: center;
+	height: 220px;
+}
+header{
+	position: fixed;
+	top: 0;
+	z-index: 100000000000000000000000000000000000000000000000000000;
+	background-color: white;
+	width: 100%;
+	padding: 10px;
+}
+
+header:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+ul, ol{
+	list-style-type: none;
+}
+nav ul{
+	font-size: 14px;
+}
+header .left-section{
+	float: left;
+}
+
+header .right-section{
+	float: right;
+	margin-right: 30px;
+	;
+}
+
+.wrapper:before{
+	content: "";
+	display: block;
+	height: 170px;
+	position: static;
+}
+
+section.landing .battery{
+	width: 250px;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	height: 30px;
+	bottom: 20px;
+
+}
+meter{
+	width: 100px;
+	margin: 0 auto;
+	display: block;
+}
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+    background-color: grey;
+}
+table, td, th {
+    border: 1px solid green;
+}
+
+[title=description] {
+	color: #042F3D;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        background-image: none!important;
+        background-color: lightblue!important;
+    }
+}
+
+section.content{
+	float: right;
+	width: 90%;
+	margin-right: 2%;
+	background-color: rgba(256,256,256,0.70);
+}
+
+section.menu{
+	float: left;
+	width: 6%;
+}
+
+div.wrapper:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/*pseudoklasy*/
+a:active{
+	background-color:#00CC99;
+}
+a:link {
+	color: blue;
+}
+a:visited {
+	color: black;
+}
+input:disabled {
+  	background-color:grey;
+}
+input:checked{
+	outline: white solid 3px;
+}
+
+input:enabled{
+	color: green;
+}
+input:focus {
+	color:black;
+	font-size:16px;
+}
+input:empty{
+	border:3px solid lightblue;
+}
+input:last-of-type{
+	color:purple;
+}
+input:required {
+  	border:2px solid red;
+}
+td:first-child{ 
+         border: 2px solid white;
+}
+td:last-child{
+	border-color: #2f39a2;
+}
+td:only-child{
+	color: lightblue;
+}
+td:nth-child(even){
+	background-color:#36ba64;
+}
+td:nth-last-child(2){
+	font-size:18px;;
+}
+header:hover {
+	color:#00CC99;
+}
+header:not(right-section){
+	color:blue;
+}
+
+/*LISTA W LIŚCIE NIE RUSZAJ NIC OPRÓCZ KOLORÓW :D */ 
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul { /* to znaczy że to jest dla pierwszej listy w pierwszej liście */
+	display: block;
+}
+
+
+nav ul {
+	background: #efefef; 
+	padding: 5px;
+	border-radius: 10px;  
+	list-style: none;
+	display: inline-table;
+}
+
+nav ul li {
+	position: relative;
+}
+nav ul li:hover {
+	background: #4b545f;
+}
+
+nav ul li:hover a {
+	color: #0ac1e6;
+}
+
+nav ul li a {
+	display: block; 
+	padding: 5px;
+	color: #757575; 
+	text-decoration: none;
+}
+
+nav ul ul {
+	background: #5f6975; 
+	border-radius: 0px;
+	padding: 5px;
+	position: absolute; 
+	top: 0;
+	left: 100%;
+}
+
+nav ul ul li {
+	float: none; 
+	position: relative;
+}
+
+nav ul ul li a {
+	padding: 5px;
+	color: #fff;
+}
+
+nav ul ul li a:hover {
+	background: #4b545f;
+}
+
+nav ul ul ul {
+	position: absolute; 
+	left: 100%; 
+	top:-5px;
+}
+
+nav ul ul ul li{
+	padding: 7.5px;
+}
