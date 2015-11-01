@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="description" content="Free TODO list tool">
+<meta name="keywords" content="todo, tasklist, todo tool">
+<meta name="author" content="A.Pacyna D.Przybyłek">
+<title>TODO list | Edit user profile</title>
+</head>
+<body>
+	<header>
+		<div class="left-section">
+			<img src="img/logo.png" alt="todo list" height="50" />
+			<h1> Your TODO list </h1>
+		</div>
+		<div class="right-section">
+			<ul>
+				<li><a href="user_dashboard.html" class="account">account</a></li>
+				<li><a href="index.html" class="log-out">log out</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="wrapper">
+		<section class="menu">
+			<nav>
+				<ul>
+					<li><a href="add_task.html">Add task</a></li>
+					<li><a href="main_page.html">Today</a></li>
+					<li><a href="">Week</a></li>
+					<li><a href="">Show all</a>
+						<ul>
+							<li><a href="">Categories</a>
+								<ul>
+									<li><a href="">Work</a></li>
+									<li><a href="">House</a></li>
+									<li><a href="">Education</a></li>
+									<li><a href="">Entertaiment</a></li>
+									<li><a href="">Other</a></li>
+								</ul>
+							</li>
+							<li><a href="">Frequently used tags</a>
+								<ul>
+									<li><a href="">#important</a></li>
+									<li><a href="">#normal</a></li>
+									<li><a href="">#house</a></li>
+									<li><a href="">#gym</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="">Tags</a></li>
+					<li><a href="">Settings</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section class="content user-edit">
+			<form enctype="multipart/form-data" autocomplete="on">
+				<label>Search:</label>
+				<input type="search" disabled="" />
+				<br>
+			  	<label>Avatar</label>
+				<input type="file" />
+				<br>
+				<label>Name</label>
+				<input type="text" placeholder="John" name="name" autofocus/>
+				<br>
+				<label>Last Name</label>
+				<input type="text" placeholder="Brown" name="lname" required/>
+				<br>
+				<label>Email</label>
+				<input type="email" placeholder="example@example.com" required name="email"/>
+				<br>
+				Telephone:<input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' name="phone" placeholder="+99(99)9999-9999">
+				<br>
+				<label>Homepage:</label>
+				<input type="url" name="homepage">
+				<br>
+				<label>Theme color</label>
+				<input type="color" />
+				<br>
+				<label>Month of birth</label>
+				<input list="months" name="bmonth">
+				<datalist id="months">
+				  <option value="January">January</option>
+				  <option value="February">February</option>
+				  <option value="March">March</option>
+				  <option value="April">April</option>
+				  <option value="May">May</option>
+				  <option value="June">June</option>
+				  <option value="July">July</option>
+				  <option value="August">August</option>
+				  <option value="September">September</option>
+				  <option value="October">October</option>
+				  <option value="November">November</option>
+				  <option value="December">December</option>
+				</datalist>
+				<br>
+				<label>Date of birth (month and year):</label>
+				<input type="month" name="datebirth">
+				<br>
+				<label>Mood</label>
+				<input type="range" min="0" max="5" />
+				<br>
+				<label>Email notifications</label>
+				<input type="radio" value="1" name="notification" /> Yes
+				<input type="radio" value="0" name="notification"/> No
+				<br>
+				<input type="reset" value="Clear"/>
+				<input type="submit" value="Save"/>
+
+			</form>
+		</section>
+	</div>
+	<footer>
+		<div class="footer-links">
+			<a href="mailto:someone@example.com?Subject=Hello" >Contact Us</a>
+			<br>
+			<a href="http://www.galoula.net/fr/Tutoriels/HTC-DREAM-G1/FTP/Native_Ubuntu/Ubuntu-Install.img">Terms &amp; Conditions</a>
+			<br>
+			<a href="ftp://www.wshtwp.pl/kan/pracownicy.accdb">Help</a>
+		</div>
+	</footer>
+</body>
+</html>

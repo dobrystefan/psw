@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="description" content="Free TODO list tool">
+<meta name="keywords" content="todo, tasklist, todo tool">
+<meta name="author" content="A.Pacyna D.Przybyłek">
+<title>TODO list | Edit user profile</title>
+</head>
+<body>
+	<header>
+		<div class="left-section">
+			<img src="img/logo.png" alt="todo list" height="50" />
+			<h1> Your TODO list </h1>
+		</div>
+		<div class="right-section">
+			<ul>
+				<li><a href="user_dashboard.html" class="account">account</a></li>
+				<li><a href="index.html" class="log-out">log out</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="wrapper">
+		<section class="menu">
+			<nav>
+				<ul>
+					<li><a href="add_task.html">Add task</a></li>
+					<li><a href="main_page.html">Today</a></li>
+					<li><a href="">Week</a></li>
+					<li><a href="">Show all</a>
+						<ul>
+							<li><a href="">Categories</a>
+								<ul>
+									<li><a href="">Work</a></li>
+									<li><a href="">House</a></li>
+									<li><a href="">Education</a></li>
+									<li><a href="">Entertaiment</a></li>
+									<li><a href="">Other</a></li>
+								</ul>
+							</li>
+							<li><a href="">Frequently used tags</a>
+								<ul>
+									<li><a href="">#important</a></li>
+									<li><a href="">#normal</a></li>
+									<li><a href="">#house</a></li>
+									<li><a href="">#gym</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="">Tags</a></li>
+					<li><a href="">Settings</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section class="content add-task">
+			<form enctype="multipart/form-data">
+				<label>Title</label>
+				<input type="text" placeholder="Cleaning"/>
+				<br>
+				<label>Deadline</label>
+				<input type="date" />
+				<br>
+				<label>Tags</label>
+				<input type="text" placeholder="clean, house"/>
+				<br>
+				<label>Category</label>
+				<input type="checkbox" name="category" value="0" /> Work
+				<input type="checkbox" name="category" value="1" /> Housework
+				<input type="checkbox" name="category" value="2" /> Education
+				<input type="checkbox" name="category" value="3" /> Entertaiment
+				<input type="checkbox" name="category" value="4" /> Other
+				<br>
+				<label>Priority</label>
+				<select>
+					<option value="0">Low</option>
+					<option value="1">Normal</option>
+					<option value="2">Hight</option>
+				</select>
+				<br>
+				<label>Description</label>
+				<textarea maxlength="200"></textarea>
+				<br>
+				<input type="reset" value="Clear"/>
+				<input type="submit" value="Save"/>
+
+			</form>
+		<div class = "image">
+		<img src="img/note.jpg" alt="note" height="50" />
+		</div>
+		</section>
+	</div>
+	<footer>
+		<div class="footer-links">
+			<a href="mailto:someone@example.com?Subject=Hello" >Contact Us</a>
+			<br>
+			<a href="http://www.galoula.net/fr/Tutoriels/HTC-DREAM-G1/FTP/Native_Ubuntu/Ubuntu-Install.img">Terms &amp; Conditions</a>
+			<br>
+			<a href="ftp://www.wshtwp.pl/kan/pracownicy.accdb">Help</a>
+		</div>
+	</footer>
+</body>
+</html>
