@@ -1,4 +1,0 @@
-9. transition i transform --> zrobi³am na index przesuwanie + obracanie, zosta³o przekrzywianie
-11. Flexible Box Layout
-12. publikowanie wielokolumnowe
-13. @media i uzale¿enienie liczby kolumn od rozdzielczoœci ekranu

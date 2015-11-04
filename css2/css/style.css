@@ -75,6 +75,7 @@ ul, ol{
 }
 nav ul{
 	font-size: 14px;
+	border-radius: 10px;  
 }
 header .left-section{
 	float: left;
